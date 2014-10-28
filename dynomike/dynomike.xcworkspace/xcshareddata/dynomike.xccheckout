@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>67620B5EFA902936DF04070AF595B76AB0333747</key>
-		<string>../../dynomike/Alamofire/</string>
+		<string>../../dynomike/Alamofire</string>
 		<key>DE51B01BF1F5C7303ACF63958B1C5CED573E04A3</key>
 		<string>../..</string>
 	</dict>
