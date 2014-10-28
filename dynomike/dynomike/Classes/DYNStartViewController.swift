@@ -7,12 +7,18 @@
 //
 
 import UIKit
+import Alamofire
 
 class DYNStartViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        Alamofire.request(.GET, "http://127.0.0.1:3000/api")
+            .responseString { (_, _, string, _) in
+                println(string)
+        }
     }
 
     override func didReceiveMemoryWarning() {
