@@ -15,6 +15,9 @@
 		9065B5D319FD674900E8698A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9065B5CB19FD674900E8698A /* Main.storyboard */; };
 		90A25F6219FE45E1004507ED /* dynomike.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 90A25F6019FE45E1004507ED /* dynomike.xcdatamodeld */; };
 		90A25F6519FE45F9004507ED /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 90A25F6419FE45F9004507ED /* Info.plist */; };
+		90A671461A0116340038E1C3 /* DYNServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A671451A0116340038E1C3 /* DYNServiceFactory.swift */; };
+		90A671481A011B1C0038E1C3 /* CommentService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A671471A011B1C0038E1C3 /* CommentService.swift */; };
+		90A6714B1A0121C80038E1C3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90A6714A1A0121C80038E1C3 /* Comment.swift */; };
 		90D66AF819FD385C00F34899 /* dynomikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D66AF719FD385C00F34899 /* dynomikeTests.swift */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +75,9 @@
 		9066AFF419FFDD840066BB5F /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = Alamofire.xcodeproj; sourceTree = "<group>"; };
 		90A25F6119FE45E1004507ED /* dynomike.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = dynomike.xcdatamodel; sourceTree = "<group>"; };
 		90A25F6419FE45F9004507ED /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		90A671451A0116340038E1C3 /* DYNServiceFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DYNServiceFactory.swift; sourceTree = "<group>"; };
+		90A671471A011B1C0038E1C3 /* CommentService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentService.swift; sourceTree = "<group>"; };
+		90A6714A1A0121C80038E1C3 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		90D66AD919FD385B00F34899 /* dynomike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dynomike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D66AF119FD385C00F34899 /* dynomikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = dynomikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		90D66AF619FD385C00F34899 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +119,8 @@
 			children = (
 				9065B5C119FD674900E8698A /* DYNAppDelegate.swift */,
 				9065B5C219FD674900E8698A /* DYNStartViewController.swift */,
+				90A671431A0116220038E1C3 /* Service */,
+				90A671491A0121BC0038E1C3 /* Model */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -192,6 +200,23 @@
 				90A25F6419FE45F9004507ED /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		90A671431A0116220038E1C3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				90A671451A0116340038E1C3 /* DYNServiceFactory.swift */,
+				90A671471A011B1C0038E1C3 /* CommentService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		90A671491A0121BC0038E1C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				90A6714A1A0121C80038E1C3 /* Comment.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		90D66AD019FD385B00F34899 = {
@@ -403,7 +428,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				90A25F6219FE45E1004507ED /* dynomike.xcdatamodeld in Sources */,
+				90A6714B1A0121C80038E1C3 /* Comment.swift in Sources */,
 				9065B5CE19FD674900E8698A /* DYNAppDelegate.swift in Sources */,
+				90A671461A0116340038E1C3 /* DYNServiceFactory.swift in Sources */,
+				90A671481A011B1C0038E1C3 /* CommentService.swift in Sources */,
 				9065B5CF19FD674900E8698A /* DYNStartViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
